@@ -1,0 +1,57 @@
+html {
+  --color-black: #000;
+  --color-lightBlack: #40414f;
+  --color-white: #fff;
+  --color-gray: #666;
+  --color-green: #19c37d;
+  --color-blue: #667eea;
+  scroll-behavior: smooth;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid var(--color-blue);
+  border-radius: 50%;
+  min-width: 50px;
+  min-height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+button:focus {
+  outline: none;
+}
+
+.accordion:hover {
+  color: darkturquoise;
+}
+.accordion.active {
+  color: darkturquoise;
+}
+.conversation-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: 16px;
+  width: 120px;
+  overflow: hidden;
+  text-align: left;
+}
+.example {
+  height: 300px;
+  overflow-y: scroll;
+  max-width: 700px;
+  width: max-content;
+}
+.example li {
+  width: 100%;
+  cursor: pointer;
+}
