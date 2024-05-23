@@ -12,6 +12,8 @@ def login():
    if request.method == 'POST':
       data = request.json
       question = data['question']
+      
+      # Xử lý khúc này, truyền được answer vào là được
       answer = chatEngine.chat(question)
       return {"status": 200, "answer": answer}
 

@@ -26,11 +26,12 @@ from transformers import  AutoTokenizer, pipeline
 #     outputs = pipe(prompt, max_new_tokens=512, do_sample=True, temperature=0.7, top_k=50, top_p=0.95, eos_token_id=eos_token, pad_token_id=eos_token)
 #     return outputs[0]['generated_text'][len(prompt):].strip()
 
-class ChatEngine:
-   def chat(self, question):
-      return "You have give your question"
 
 # prompt = 'Dạo gần đây tôi cảm thấy rất áp lực mọi việc điều khiến tôi cảm thấy mệt mỏi. Vậy tôi cần phải làm gì để giảm bớt gánh nặng này đây?'
 # prompt = "Tôi bị xã hội xa lánh, đánh đập, tôi muốn làm kẻ giết người hàng loạt, mỗi lần làm tôi cảm thấy rất thỏa mãn. Vậy tâm lý tôi có còn bình thường không?"
 # res = chat(prompt)
 # print(res)
+
+class ChatEngine:
+   def chat(self, question):
+      return "You have give your question"
